@@ -6,7 +6,9 @@ import lombok.Data;
 public class HashResponse {
     public String hash1;
     public String hash2;
-    public Double similarity;
+    public Double hashSimilarity;
     public String algorithm;
+    public Double inputSimilarity;
+    public Integer hashLength;
 
 }
