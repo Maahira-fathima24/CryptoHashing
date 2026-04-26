@@ -1,0 +1,187 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #1aa3a8, #123c5a);
+  color: white;
+}
+
+/* FULL PAGE CENTER — NO SCROLL */
+.container {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  padding-top: 20px;
+}
+
+/* TITLE — PROMINENT */
+h1 {
+  font-size: 30px;
+  letter-spacing: 3px;
+  margin-bottom: 25px;
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  color: #ede5e5;
+}
+
+/* FORM */
+.form {
+  width: 600px;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  margin: 12px 0;
+}
+
+.row label {
+  width: 140px;
+  text-align: right;
+  margin-right: 15px;
+  font-weight: bold;
+}
+
+/* INPUTS — CLEAN + BLACK TEXT */
+.row input {
+  flex: 1;
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  background: #dcdcdc;
+  color: black;
+}
+
+/* HASH LENGTH CENTERED */
+.row.center {
+  justify-content: center;
+}
+
+.row.center label {
+  width: auto;
+}
+
+.small {
+  width: 120px;
+  margin-left: 15px;
+}
+
+/* BUTTONS */
+/* BUTTON CONTAINER */
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+  width: 700px;        /* ensures enough space */
+  margin: 20px auto;
+}
+
+/* BUTTON STYLE */
+.buttons button {
+  flex: 1;             /* makes all buttons equal width */
+  height: 42px;
+  background: #2f2f2f;
+  border: 1px solid #aaa;
+  color: white;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  transition: 0.2s;
+}
+
+/* HOVER EFFECT */
+.buttons button:hover {
+  background: #555;
+}
+
+/* RESULTS — ALIGNED LIKE YOUR IMAGE */
+.results {
+  width: 600px;
+  margin-top: 20px;
+}
+
+.results div {
+  display: flex;
+  align-items: center;
+  margin: 10px 0;
+  gap: 0px;
+}
+
+.results span {
+  width: 180px;
+  min-width: 150px;
+}
+/* OUTPUT BOX INSTEAD OF LINE */
+
+
+.results p {
+  min-height: 30px;
+  padding: 10px;
+  background: #dcdcdc;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  color: black;
+  display: flex;
+  align-items: center;
+}
+
+/* SIMPLE UNDERLINE OUTPUT (NOT BARS) */
+.results p {
+  flex: 1;
+  border-bottom: 2px solid rgba(2, 2, 2, 0.854);
+  height: 14px;
+  margin: 0;
+}
+
+.hash-side {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.hash-side label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+/* HASH LENGTH BELOW RESULTS */
+.hash-bottom {
+  margin-top: 25px;   /* space after results */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 12px;
+}
+
+.hash-bottom label {
+  font-weight: bold;
+  font-size: 16px;
+  color: white;
+}
+
+.hash-output {
+  width: 80px;
+  height: 35px;
+  background: #dcdcdc;
+  border-radius: 6px;
+  border: 1px solid #aaa;
+  color: black;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  font-size: 15px;
+  font-weight: 500;
+}
